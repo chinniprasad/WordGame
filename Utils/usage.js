@@ -1,11 +1,11 @@
-# WordGame
-
-Clone this repo
-cd to WordGame
-Install dependencies using command "npm install"
-link npm to bin to access dict command on terminal using "npm link"
-
-start using commands: 
+module.exports = () => {
+  const usageText = `
+    dict helps you manage you dict tasks.
+  
+    usage:
+      dict <command>
+  
+      commands can be:
 
       help: used to print the usage guide
       def:  used to get definations of a word
@@ -14,3 +14,8 @@ start using commands:
       ex:   used to get examples of a word
       dict: used to get all above details of the word
       play: used to play game on words
+     
+    `;
+
+  console.log(usageText);
+};
